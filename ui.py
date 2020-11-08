@@ -17,9 +17,6 @@ WINDOWSIZE = '1200x600'
 Man = Manager()
 io = Fileio()
 
-
-
-
 # --------------------------------------------------------------- | BUTTON FUNCTIONS
 
 def pressednewfile():
@@ -29,28 +26,20 @@ def pressednewfile():
     updateaccountlist()
     accountslist.selection_clear(0, last=len(Man.loaded))
 
-# ---------------------------------------------- | 
-
 def pressedimportbutton():
     boolean = io.importfile(Man)
     if boolean:
         consoleoutput("File Imported")
         updateaccountlist()
 
-# ---------------------------------------------- | 
-
 def pressedexporttbutton():
     boolean = io.exportfile(Man)
     if boolean:
         consoleoutput("File Exported")
-    
-# ---------------------------------------------- | 
 
 def pressednewkey():
     Man.generate()
     consoleoutput("New Key Generated")
-
-# ---------------------------------------------- | 
 
 def pressedcreatebutton():
 
@@ -76,12 +65,8 @@ def pressedcreatebutton():
         passwordtext.insert(0, "")
         updateaccountlist()
 
-# ---------------------------------------------- | 
-
 def consoleoutput(sent):
     console['text'] = sent
-
-# ---------------------------------------------- | 
 
 def pressedcancelbutton():
     enablebuttons()
@@ -95,16 +80,12 @@ def pressedcancelbutton():
     addpanel.pack_forget()
     removebutton.grid_forget()
 
-# ---------------------------------------------- | 
-
 def pressedaddbutton():
     disablebuttons()
     addpanel.pack()
     consoleoutput("")
     createbutton["command"] = pressedcreatebutton
     createbutton["text"] = "[ Create ]"
-
-# ---------------------------------------------- | 
 
 def pressededitbutton():
     consoleoutput("")
@@ -126,8 +107,6 @@ def pressededitbutton():
         usernametext.insert(0, Man.loaded[index][1])
         passwordtext.insert(0, Man.loaded[index][2])
 
-# ---------------------------------------------- | 
-
 def replaceitem():
     index = accountslist.curselection()[0]
     Man.loaded[index][0] = accountnametext.get()
@@ -139,8 +118,6 @@ def replaceitem():
     removebutton.grid_forget()
     updateaccountlist()
 
-# ---------------------------------------------- | 
-
 def pressedremovebutton():
     index = accountslist.curselection()[0]
     del Man.loaded[index]
@@ -151,14 +128,10 @@ def pressedremovebutton():
     removebutton.grid_forget()
     updateaccountlist()
 
-# ---------------------------------------------- | 
-
 def pressedgeneratebutton():
     generatedpassword = Man.generatepassword()
     passwordtext.delete(0,"end")
     passwordtext.insert(0, generatedpassword)
-
-# ---------------------------------------------- | 
 
 def disablebuttons():
     addbutton["state"] = "disabled"
@@ -169,8 +142,6 @@ def disablebuttons():
     newkeybutton["state"] = "disabled"
     accountslist["state"] = "disabled"
 
-# ---------------------------------------------- | 
-
 def enablebuttons():
     addbutton["state"] = "normal"
     editbutton["state"] = "normal"
@@ -179,8 +150,6 @@ def enablebuttons():
     exportbutton["state"] = "normal"
     newkeybutton["state"] = "normal"
     accountslist["state"] = "normal"
-
-# ---------------------------------------------- | 
 
 def updateaccountlist():
     
