@@ -7,3 +7,10 @@ Though the event is over I still maintain this project, as it is a piece that I 
 - More Advanced Python
 - Cryptography Functionality (Fernet API)
 - Tkinter (GUI Design In Python)
+
+### Screenshots
+<p align="center">
+      <img src="https://i.imgur.com/k9HefoZ.png" width="250">
+      <img src="https://i.imgur.com/FtTQTrw.png" width="250">
+      <img src="https://i.imgur.com/bvQRMCi.png" width="250">
+</p>
