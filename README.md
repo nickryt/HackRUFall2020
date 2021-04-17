@@ -10,7 +10,7 @@ Though the event is over I still maintain this project, as it is a piece that I 
 
 ### Screenshots
 <p>
-      <img src="https://i.imgur.com/k9HefoZ.png">
+      <img src="https://i.imgur.com/sViVTBx.png">
       <img src="https://i.imgur.com/FtTQTrw.png">
       <img src="https://i.imgur.com/bvQRMCi.png">
 </p>
