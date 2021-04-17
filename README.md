@@ -8,7 +8,7 @@ Though the event is over I still maintain this project, as it is a piece that I 
 - Cryptography Functionality (Fernet API)
 - Tkinter (GUI Design In Python)
 
-### Screenshots
+### SCREENSHOTS :
 <p>
       <img src="https://i.imgur.com/sViVTBx.png">
       <img src="https://i.imgur.com/FtTQTrw.png">
