@@ -9,8 +9,8 @@ Though the event is over I still maintain this project, as it is a piece that I 
 - Tkinter (GUI Design In Python)
 
 ### Screenshots
-<p align="center">
-      <img src="https://i.imgur.com/k9HefoZ.png" width="250">
-      <img src="https://i.imgur.com/FtTQTrw.png" width="250">
-      <img src="https://i.imgur.com/bvQRMCi.png" width="250">
+<p>
+      <img src="https://i.imgur.com/k9HefoZ.png">
+      <img src="https://i.imgur.com/FtTQTrw.png">
+      <img src="https://i.imgur.com/bvQRMCi.png">
 </p>
